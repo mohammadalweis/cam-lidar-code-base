@@ -1,12 +1,12 @@
 # Default configuration for local debugging. Update paths before use.
 paths:
-  code_base: ..
-  dataset_root: ../dataset
-  db_root: ../dataset/nuplan-v1.1_mini
-  sensor_root: ../dataset
-  map_root: ../dataset/nuplan-maps-v1.0
-  output_dir: ../model/outputs
-  debug_dir: ../model/outputs/data_debug
+  code_base: /content/cam-lidar-code-base
+  dataset_root: /content/drive/MyDrive/dataset
+  db_root: /content/drive/MyDrive/dataset/nuplan-v1.1_mini/data/cache/mini
+  sensor_root: /content/drive/MyDrive/dataset
+  map_root: /content/drive/MyDrive/dataset/nuplan-maps-v1.0
+  output_dir: /content/cam-lidar-code-base/model/outputs
+  debug_dir: /content/cam-lidar-code-base/model/outputs/data_debug
 
 data:
   map_version: nuplan-maps-v1.0
@@ -48,4 +48,3 @@ scenario_filter:
   token_set_path: null
   fraction_in_token_set_threshold: null
   ego_route_radius: null
-
