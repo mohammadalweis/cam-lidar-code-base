@@ -3,7 +3,7 @@ paths:
   code_base: /content/cam-lidar-code-base
   dataset_root: /content/drive/MyDrive/dataset
   db_root: /content/drive/MyDrive/dataset/nuplan-v1.1_mini/data/cache/mini
-  sensor_root: /content/drive/MyDrive/dataset
+  sensor_root: /content/drive/MyDrive/dataset/nuplan_sensors
   map_root: /content/drive/MyDrive/dataset/nuplan-maps-v1.0
   output_dir: /content/cam-lidar-code-base/model/outputs
   debug_dir: /content/cam-lidar-code-base/model/outputs/data_debug
