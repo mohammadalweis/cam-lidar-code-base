@@ -1,0 +1,51 @@
+# Default configuration for local debugging. Update paths before use.
+paths:
+  code_base: ..
+  dataset_root: ../dataset
+  db_root: ../dataset/nuplan-v1.1_mini
+  sensor_root: ../dataset
+  map_root: ../dataset/nuplan-maps-v1.0
+  output_dir: ../model/outputs
+  debug_dir: ../model/outputs/data_debug
+
+data:
+  map_version: nuplan-maps-v1.0
+  camera_channels: ["CAM_F0", "CAM_L0", "CAM_R0", "CAM_B0"]
+  include_lidar: true
+  future_horizon_s: 8.0
+  future_interval_s: 0.5
+  max_agents: 64
+  agent_distance_filter: 120.0
+  image:
+    resize_hw: [256, 704]
+    antialias: true
+    to_float: true
+  lidar:
+    max_points: 200000
+    radius_filter_m: null
+
+loader:
+  batch_size: 2
+  num_workers: 0
+  pin_memory: false
+  shuffle: true
+
+scenario_filter:
+  scenario_types: null
+  scenario_tokens: null
+  log_names: null
+  map_names: null
+  num_scenarios_per_type: null
+  limit_total_scenarios: 8
+  timestamp_threshold_s: null
+  ego_displacement_minimum_m: null
+  expand_scenarios: true
+  remove_invalid_goals: true
+  shuffle: true
+  ego_start_speed_threshold: null
+  ego_stop_speed_threshold: null
+  speed_noise_tolerance: null
+  token_set_path: null
+  fraction_in_token_set_threshold: null
+  ego_route_radius: null
+
